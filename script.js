@@ -29,7 +29,9 @@ $(function() {
 					};
 					$results.append($trackTemplate(trackData));
 				});
-			};
+			}else{
+        $results.append("No results found!! </br> Try another searchword.");
+      }
 		});
 	});
 });
