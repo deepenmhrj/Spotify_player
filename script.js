@@ -18,16 +18,17 @@ $(function() {
 
 		$.get(searchUrl,function(data){
 			var trackResults = data.tracks.items;
-			console.log(trackResults);
 
 			if (trackResults.length > 0){
 				_.each(trackResults, function(result, index){
-					
-					//testing results
-					$results.append($trackTemplate({name:result.name}));
-
+					var trackData={
+						albumArt: result.album.images.length>0 ? result.album.images[0].url : null,
+						artist: result.artists.name,
+            track: result.name,
+            url: result.preview_url
+					};
+					$results.append($trackTemplate(trackData));
 				});
-
 			};
 		});
 	});
