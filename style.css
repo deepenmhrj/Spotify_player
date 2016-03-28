@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+body{
+	background-color: #86942A;
+	background: url("musicbg.jpg");
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ 	width: 100%;
+ 	max-height: 380px;
+	background-attachment: fixed;
+}
+
+img{
+	display:block;
+	text-align: center;
+	max-width: 400px;
+	position: relative;
+	margin:  auto;
+}
+
+.logo{
+	padding: 30px;
+}
+
+.form-group{
+	text-align: center;
+	padding: 10px;
+}
+
+.form-control{
+	max-width: 400px;
+	margin:auto;
+}
+
+.searchBtn{
+	color: #CCCFBC ;
+	font-family: 'Julius Sans One', sans-serif;
+	font-weight: 800;
+	background-color: #507642 ;
+	border: none;
+}
+
+.results{
+	color: black;
+	background-color: rgba( 204, 207, 188, .5);
+}

@@ -23,9 +23,11 @@ $(function() {
 				_.each(trackResults, function(result, index){
 					var trackData={
 						albumArt: result.album.images.length>0 ? result.album.images[0].url : null,
-						artist: result.artists.name,
+						albumName: result.album.name,
+						artist: result.artists[0].name,
             track: result.name,
-            url: result.preview_url
+            url: result.preview_url,
+            full_url: result.artists[0].external_urls.spotify
 					};
 					$results.append($trackTemplate(trackData));
 				});
